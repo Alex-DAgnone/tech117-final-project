@@ -63,9 +63,23 @@
 
   <section id="introduction">
     <h2>Introduction</h2>
-    <p>This project uses an <strong>Arduino Uno</strong>, an <strong>KY-039 heartbeat sensor</strong>, a
-      <strong>passive buzzer</strong>, and <strong>red/yellow/green LEDs</strong> to read your heartbeat, and provide visual and auditory feedback based on the measured heart rate. The system is designed to alert users when their heart rate exceeds certain thresholds, promoting awareness of cardiovascular health.
-    </p>
+    <p>This project uses an Arduino Uno, an KY-039 heartbeat sensor, a passive buzzer, an LED, and an LCD to measure and 
+      determine the health of one’s pulse.  The system is designed with first aiders in mind, so it should be easy to use 
+      and eventually compact enough to fit into first aid kits.
+    </p> Our prototype needs to do three things: detect a casualty’s pulse, produce a buzz and flash of light for each detected beat, 
+    and display the BPM along with whether it is normal, too high, or too low.
+    </p> Ideally, our prototype would somehow be able to determine the casualty’s age since the range of a healthy pulse depends on 
+    one’s age.  It would also be nice to have a feature that could measure the strength of the casualty’s pulse and display that through 
+    the use of multiple LEDs.  However, due to time constraints and our limited level of expertise, these may be features that will have 
+    to be implemented in future variations of this device.
+    </p> We will test each function separately before combining them.  We will consider the prototype successful if the buzzer and LED 
+    respond to each beat, the displayed BPM is close to a reference reading taken at the same time (a manual pulse count or smart watch) 
+    in a closed, controlled environment, and if the LCD shows the correct category based on a specified range.  
+    </p> Aside from the time and experience limitations of this project, our heartbeat sensor, the KY-039, is not available in Tinkercad, 
+    so we can not fully test the circuit or code before building it.  Additionally, the sensor we are using for this prototype needs to 
+    be covered and under perfect conditions in order to return reliable readings.  Since this is a low-cost proof of concept, we expect 
+    it to be less accurate than current medical devices on the market and it is not to be used as an official first aid device.  
+    Otherwise, we will report our measured results and include any features that do not work reliably.
   </section>
 
   <section id="circuit-diagram">
