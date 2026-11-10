@@ -57,21 +57,20 @@
     <p><strong>Instructor:</strong> Ph.D. Ana Rodrigues</p>
     <p><strong>Team Members:</strong></p>
     <ul>
-      <li>Alex, Daniel, Michael</li>
+      <li>Alexander D'Agnone, Daniel Bent, Michael Bent, Nica Esguerra</li>
     </ul>
   </section>
 
   <section id="introduction">
     <h2>Introduction</h2>
-    <p>This project uses an <strong>Arduino Uno</strong>, an <strong>HC-SR04 ultrasonic sensor</strong>, a
-      <strong>passive buzzer</strong>, and <strong>red/yellow/green LEDs</strong> to provide proximity-based
-      alerts, similar to automotive collision detection systems.
+    <p>This project uses an <strong>Arduino Uno</strong>, an <strong>KY-039 heartbeat sensor</strong>, a
+      <strong>passive buzzer</strong>, and <strong>red/yellow/green LEDs</strong> to read your heartbeat, and provide visual and auditory feedback based on the measured heart rate. The system is designed to alert users when their heart rate exceeds certain thresholds, promoting awareness of cardiovascular health.
     </p>
   </section>
 
   <section id="circuit-diagram">
     <h2>Circuit Diagram</h2>
-    <p>The ultrasonic sensor measures distance; the Arduino activates LEDs and the buzzer according to distance
+    <p>The KY-039 heartbeat sensor detects your pulse; the Arduino activates LEDs and the buzzer according to heart rate
       thresholds.</p>
     <img src="collision-warning-system-Arduino.jpg" alt="Arduino collision warning system">
   </section>
@@ -280,13 +279,20 @@ void loop() {
 
   <ul>
     <li>
-      Arduino Project Hub. (n.d.). 
-      <em>Ultrasonic sensor projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor
-      </a>
-    </li>
+
+   SparkFun Electronics.
+
+   <em>Pulse Oximeter and Heart Rate Monitor Hookup Guide.</em>
+
+   SparkFun Electronics.
+
+   <a href=https://learn.sparkfun.com/tutorials/sparkfun-pulse-oximeter-and-heart-rate-monitor-hookup-guide/reference-tables-and-sensor-settings>
+
+    https://learn.sparkfun.com/tutorials/sparkfun-pulse-oximeter-and-heart-rate-monitor-hookup-guide/reference-tables-and-sensor-settings
+
+   </a>
+
+  </li>
 
     <li>
       Arduino Project Hub. (n.d.). 
@@ -297,23 +303,23 @@ void loop() {
       </a>
     </li>
 
-    <li>
-      Arduino Project Hub. (n.d.). 
-      <em>LED projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/led" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/led
-      </a>
-    </li>
+     <li>
 
-    <li>
-      Instructables. (n.d.). 
-      <em>Distance measurement using ultrasonic sensor.</em> 
-      Instructables. 
-      <a href="https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/" target="_blank" rel="noopener noreferrer">
-        https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/
-      </a>
-    </li>
+   SunFounder.
+
+   <em>Arduino MAX30102 Heart Rate Sensor Tutorial.</em>
+
+   SunFounder. 
+
+   <a href="https://www.sunfounder.com/pages/arduino-max30102-heart-rate-sensor-tutorial?utm_source=chatgpt.com">
+
+    https://www.sunfounder.com/pages/arduino-max30102-heart-rate-sensor-tutorial?utm_source=chatgpt.com
+
+   </a>
+
+  </li>
+
+    
 
     <li>
       Circuit Basics. (n.d.). 
@@ -324,14 +330,7 @@ void loop() {
       </a>
     </li>
 
-    <li>
-      Last Minute Engineers. (n.d.). 
-      <em>Ultrasonic sensor tutorial.</em> 
-      Last Minute Engineers. 
-      <a href="https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/" target="_blank" rel="noopener noreferrer">
-        https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/
-      </a>
-    </li>
+    
   </ul>
 </section>
 
