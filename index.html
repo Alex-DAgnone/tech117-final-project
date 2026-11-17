@@ -94,16 +94,117 @@
 
   <section id="environment">
     <h2>Environmental Impact Assessment</h2>
-    <ul>
-      <li><strong>Materials:</strong> The Arduino Uno is RoHS and WEEE compliant, limiting hazardous substances.
-      </li>
-      <li><strong>Energy Efficiency:</strong> The circuit draws minimal power (~50 mA at 5V), ideal for USB or
-        solar power.</li>
-      <li><strong>Reusability:</strong> All components are modular and reusable, reducing electronic waste.</li>
-      <li><strong>Packaging & Shipping:</strong> Ordering all components from a single supplier helps minimize
-        carbon footprint.</li>
-    </ul>
-  </section>
+    
+<style>
+  .compare { max-width: 60rem; margin: 0 auto; padding: 1rem; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.5; color: #1f2933; }
+  .compare h3 { margin: 0 0 .75rem; font-size: 1.25rem; }
+  .compare p { margin: 0 0 1rem; max-width: 70ch; }
+  .compare-scroll { overflow-x: auto; }
+  .compare table { width: 100%; min-width: 40rem; border-collapse: collapse; font-size: .95rem; }
+  .compare caption { text-align: left; font-weight: 600; padding-bottom: .5rem; }
+  .compare th, .compare td { border: 1px solid #c5ccd3; padding: .65rem .8rem; text-align: left; vertical-align: top; }
+  .compare thead th { background: #1f3a5f; color: #fff; }
+  .compare tbody th { background: #eef1f5; width: 9rem; font-weight: 600; }
+  .compare ul { margin: 0; padding-left: 1.1rem; }
+  .compare li + li { margin-top: .35rem; }
+  .compare a { color: #0b5cad; }
+  .compare a:focus-visible { outline: 3px solid #f2b705; outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<section class="compare" id="comparative-analysis">
+  <h3>Comparative analysis of technologies</h3>
+  <p>
+    We considered two optical sensors for detecting a pulse: the
+    <a href="https://www.sparkfun.com/pulse-sensor.html">Pulse Sensor</a>, which shines a green LED on the skin
+    and measures the light reflected back, and the KY-039 heartbeat sensor, which measures the infrared light
+    passing through the fingertip.
+  </p>
+
+  <div class="compare-scroll">
+    <table>
+      <caption>Pulse Sensor vs. KY-039 heartbeat sensor module</caption>
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;</th>
+          <th scope="col">Pulse Sensor</th>
+          <th scope="col">KY-039 heartbeat sensor module</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">How it works</th>
+          <td>Green LED reflects off the skin</td>
+          <td>Infrared light passes through the fingertip</td>
+        </tr>
+        <tr>
+          <th scope="row">Advantages</th>
+          <td>
+            <ul>
+              <li>Has a small amplifier and noise filter, so it should give a clearer signal and read pulse with better accuracy.</li>
+              <li>Comes with pre-attached wiring and a ready-made Arduino library (PulseSensor Playground), so it is faster to set up and needs less code.</li>
+              <li>User friendly: rest a finger on the pad and apply consistent, steady pressure.</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Already owned (in our electronics kit).</li>
+              <li>Simple circuit.</li>
+              <li>Cheaper, at around $3 per module (<a href="https://www.amazon.ca/KY-039-Finger-Heartbeat-Measurement-Arduino/dp/B07S8N69DK">example listing</a>).</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Disadvantages</th>
+          <td>
+            <ul>
+              <li>More expensive: nearly $30, which is over our budget.</li>
+              <li>May not be delivered in time.</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>No amplification, so the signal is weaker and less accurate.</li>
+              <li>Requires shielding because it is sensitive to light.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Sustainability: pros</th>
+          <td>
+            <ul>
+              <li>Likely to last well and give steadier readings, which means less retesting and fewer wasted attempts.</li>
+              <li>Sold by the electronics reseller SparkFun, so documentation and support are easier to find, which makes the sensor easier to reuse across future projects (<a href="https://www.sparkfun.com/pulse-sensor.html#content-features">product features</a>).</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>We can reuse a module we already own, so there is no new manufacturing and no shipping.</li>
+              <li>Operates between 3.3 V and 5 V, so it suits a small battery-powered device or USB supply with no extra power circuitry.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Sustainability: cons</th>
+          <td>
+            <ul>
+              <li>Would need to be ordered and shipped from the United States, which adds transportation emissions and packaging waste.</li>
+              <li>Buying a new part when we already own a working sensor adds to manufacturing demand and e-waste.</li>
+              <li>Where it is manufactured and under what labour conditions is not clear on the product page, so we cannot tell whether the higher price reflects ethical practices.</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Very low-cost, mass-produced modules make it hard to trace where the parts came from or how the workers were treated. We cannot verify either.</li>
+              <li>It is cheap enough to throw away and replace, which does not support sustainable practices such as investing in high-quality products to use for a long time and minimizing transport and packaging waste.</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
 
   <section id="bom">
     <h2>Bill of Materials (BoM)</h2>
