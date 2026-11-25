@@ -207,79 +207,145 @@
   </div>
 </section>
 
-  <section id="bom">
-    <h2>Bill of Materials (BoM)</h2>
+  
+<section id="bom">
+  <h2>Bill of Materials (BoM)</h2>
+  <div class="bom">
     <table>
       <thead>
         <tr>
-          <th>Item</th>
-          <th>Qty</th>
-          <th>Unit Price</th>
-          <th>Subtotal</th>
-          <th>Source</th>
+          <th scope="col">Item</th>
+          <th scope="col">Description</th>
+          <th scope="col">Qty</th>
+          <th scope="col">Specifications</th>
+          <th scope="col">Estimated Cost (per piece)</th>
+          <th scope="col">Supplier</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Arduino Uno Rev3</td>
           <td>1</td>
-          <td>$27.60</td>
-          <td>$27.60</td>
-          <td><a href="https://store-usa.arduino.cc/products/arduino-uno-rev3">Arduino Store</a></td>
+          <td>Elegoo Uno R3 with USB cable (Arduino compatible)</td>
+          <td>1</td>
+          <td><ul><li>ATmega328P microcontroller</li><li>5V supply</li><li>14 digital I/O pins</li><li>6 analog inputs</li></ul></td>
+          <td>CAD $24.99</td>
+          <td><a href="https://www.amazon.ca/Elegoo-Board-ATmega328P-ATMEGA16U2-Arduino/dp/B01EWOE0UU">Amazon</a></td>
         </tr>
         <tr>
-          <td>HC-SR04 Ultrasonic Sensor</td>
+          <td>2</td>
+          <td>KY-039 Heartbeat sensor module</td>
           <td>1</td>
-          <td>$3.95</td>
-          <td>$3.95</td>
-          <td><a href="https://www.adafruit.com/product/3942">Adafruit</a></td>
+          <td><ul><li>3.3-5V supply</li><li>Size: 19 mm × 15.3 mm × 22 mm</li></ul></td>
+          <td>CAD $1.28</td>
+          <td><a href="https://www.alibaba.com/product-detail/New-KY-039-Finger-Heartbeat-Measurement_1600742895655.html">Alibaba</a></td>
         </tr>
         <tr>
+          <td>3</td>
+          <td>Jumper wires (heartbeat sensor to controller board)</td>
+          <td>3</td>
+          <td>Male-to-female</td>
+          <td>CAD $0.08</td>
+          <td><a href="https://www.amazon.ca/RGBZONE-120pcs-Multicolored-Dupont-Breadboard/dp/B01M1IEUAF">Amazon</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>1602A LCD module</td>
+          <td>1</td>
+          <td><ul><li>16x2 characters</li><li>5V supply</li><li>16-pin parallel interface</li></ul></td>
+          <td>CAD $2.18</td>
+          <td><a href="https://www.alibaba.com/product-detail/Original-LCD-16-2-1602A-2004A_1601984623124.html">Alibaba</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>WH148 linear potentiometer</td>
+          <td>1</td>
+          <td><ul><li>10KΩ ±20%</li><li>¼ W</li></ul></td>
+          <td>CAD $0.14</td>
+          <td><a href="https://www.alibaba.com/product-detail/WH148-Single-Linked-Potentiometer-with-Cap_1601294959473.html">Alibaba</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
           <td>Passive Buzzer</td>
           <td>1</td>
-          <td>$0.95</td>
-          <td>$0.95</td>
-          <td><a href="https://www.sparkfun.com/passive-buzzer-module.html">SparkFun</a></td>
+          <td><ul><li>Electromagnetic</li><li>3V rated</li></ul></td>
+          <td>CAD $0.16</td>
+          <td><a href="https://www.alibaba.com/product-detail/AT0946R16-Electromagnetic-Passive-3V-Alarm-Mini_1601154017152.html">Alibaba</a></td>
         </tr>
         <tr>
-          <td>LEDs (Red, Yellow, Green)</td>
-          <td>3</td>
-          <td>$0.20</td>
-          <td>$0.60</td>
-          <td>Adafruit</td>
+          <td>7</td>
+          <td>Resistor for Buzzer</td>
+          <td>1</td>
+          <td><ul><li>1KΩ ±1%</li><li>¼ W</li></ul></td>
+          <td>CAD $0.08</td>
+          <td><a href="https://www.amazon.ca/HUABAN-100PCS-Watts-Metal-Resistor/dp/B08ML1Q4WZ">Amazon</a></td>
         </tr>
         <tr>
-          <td>220 Ω Resistors</td>
-          <td>3</td>
-          <td>$0.03</td>
-          <td>$0.09</td>
-          <td>Adafruit</td>
+          <td>8</td>
+          <td>LED (any colour)</td>
+          <td>1</td>
+          <td><ul><li>5 mm</li><li>20 mA max</li><li>2-3V forward voltage (depends on colour)</li></ul></td>
+          <td>CAD $0.15</td>
+          <td><a href="https://www.alibaba.com/product-detail/JuHong-5mm-led-diode-2-leg_1600273637317.html">Alibaba</a></td>
         </tr>
         <tr>
+          <td>9</td>
+          <td>Resistor for LED and LCD</td>
+          <td>2</td>
+          <td><ul><li>220Ω ±1%</li><li>¼ W</li></ul></td>
+          <td>CAD $0.04</td>
+          <td><a href="https://www.amazon.ca/HUABAN-Pieces-Watts-Metal-Resistor/dp/B0C2PZ91BK">Amazon</a></td>
+        </tr>
+        <tr>
+          <td>10</td>
           <td>Breadboard</td>
           <td>1</td>
-          <td>$4.95</td>
-          <td>$4.95</td>
-          <td><a href="https://www.adafruit.com/product/64">Adafruit</a></td>
+          <td><ul><li>830 tie-points</li><li>Solderless</li></ul></td>
+          <td>CAD $4.33</td>
+          <td><a href="https://www.amazon.ca/Breadboard-Solderless-Prototype-Distribution-Connecting/dp/B01EV6LJ7G">Amazon</a></td>
         </tr>
         <tr>
-          <td>Jumper Wires</td>
-          <td>1 set</td>
-          <td>$3.50</td>
-          <td>$3.50</td>
-          <td><a href="https://www.sparkfun.com/jumper-wires-standard-7-m-m-30-awg-30-pack.html">SparkFun</a>
-          </td>
+          <td>11</td>
+          <td>Jumper wires</td>
+          <td>~25</td>
+          <td>Male-to-male</td>
+          <td>CAD $0.08</td>
+          <td><a href="https://www.amazon.ca/RGBZONE-120pcs-Multicolored-Dupont-Breadboard/dp/B01M1IEUAF">Amazon</a></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>TinkerCAD</td>
+          <td>1</td>
+          <td>Used to simulate and test circuit before building</td>
+          <td>Free</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Arduino IDE (software)</td>
+          <td>1</td>
+          <td>Used to write, upload, and monitor code</td>
+          <td>Free</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Computer for programming</td>
+          <td>1</td>
+          <td>Any computer with Arduino IDE installed</td>
+          <td>—</td>
+          <td>—</td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="3">Estimated Total</td>
-          <td>$41.64</td>
-          <td>—</td>
+          <th scope="row" colspan="4">TOTAL</th>
+          <td>CAD $35.63</td>
+          <td>&nbsp;</td>
         </tr>
       </tfoot>
     </table>
-  </section>
+  </div>
+</section>
 
   <section id="prototype">
     <h2>Prototype</h2>
